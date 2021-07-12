@@ -3,7 +3,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 #dependencies install
 sudo apt-get update
-sudo apt-get install \
+sudo apt-get install --yes \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -21,7 +21,7 @@ sudo add-apt-repository \
    
 #fresh install docker engine
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install --yes docker-ce docker-ce-cli containerd.io
 
 #downloading docker compose
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
